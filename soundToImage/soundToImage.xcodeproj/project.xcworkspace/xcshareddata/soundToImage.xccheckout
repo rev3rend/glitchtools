@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B5C4804B-CF84-4490-918C-74BB902069C7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>soundToImage</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>561B5B0C-C6C7-414B-8CC6-7FC3F29B4C7E</key>
+		<string>https://github.com/rev3rend/glitchtools.git</string>
+		<key>B131652E-260D-471F-ABF1-C4AA3C1638E7</key>
+		<string>https://github.com/kylemcdonald/ofxAudioDecoder.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>soundToImage/soundToImage.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>561B5B0C-C6C7-414B-8CC6-7FC3F29B4C7E</key>
+		<string>../../..</string>
+		<key>B131652E-260D-471F-ABF1-C4AA3C1638E7</key>
+		<string>../../../../../addons/ofxAudioDecoder</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rev3rend/glitchtools.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>561B5B0C-C6C7-414B-8CC6-7FC3F29B4C7E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>561B5B0C-C6C7-414B-8CC6-7FC3F29B4C7E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>glitchtools</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B131652E-260D-471F-ABF1-C4AA3C1638E7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxAudioDecoder</string>
+		</dict>
+	</array>
+</dict>
+</plist>
