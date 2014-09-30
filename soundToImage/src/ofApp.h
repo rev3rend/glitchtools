@@ -15,6 +15,7 @@ class ofApp : public ofBaseApp{
 	
 	ofxAudioDecoder audio;
 	ofMesh left, right;
+    ofImage img;
 
 		void keyPressed(int key);
 		void keyReleased(int key);

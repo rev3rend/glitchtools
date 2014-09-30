@@ -10,33 +10,37 @@
 	<string>soundToImage</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>561B5B0C-C6C7-414B-8CC6-7FC3F29B4C7E</key>
-		<string>https://github.com/rev3rend/glitchtools.git</string>
+		<key>65F0E57F9FBE704C78F412BB3A758052CBC46923</key>
+		<string>https://github.com/kylemcdonald/ofxAudioDecoder.git</string>
 		<key>B131652E-260D-471F-ABF1-C4AA3C1638E7</key>
 		<string>https://github.com/kylemcdonald/ofxAudioDecoder.git</string>
+		<key>FB11692B37325E605D72E8DEEF15958C012D8E46</key>
+		<string>https://github.com/rev3rend/glitchtools.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>soundToImage/soundToImage.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>561B5B0C-C6C7-414B-8CC6-7FC3F29B4C7E</key>
-		<string>../../..</string>
-		<key>B131652E-260D-471F-ABF1-C4AA3C1638E7</key>
+		<key>65F0E57F9FBE704C78F412BB3A758052CBC46923</key>
 		<string>../../../../../addons/ofxAudioDecoder</string>
+		<key>B131652E-260D-471F-ABF1-C4AA3C1638E7</key>
+		<string>../../../../addons/ofxAudioDecoder</string>
+		<key>FB11692B37325E605D72E8DEEF15958C012D8E46</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/rev3rend/glitchtools.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>561B5B0C-C6C7-414B-8CC6-7FC3F29B4C7E</string>
+	<string>FB11692B37325E605D72E8DEEF15958C012D8E46</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>561B5B0C-C6C7-414B-8CC6-7FC3F29B4C7E</string>
+			<string>FB11692B37325E605D72E8DEEF15958C012D8E46</string>
 			<key>IDESourceControlWCCName</key>
 			<string>glitchtools</string>
 		</dict>
@@ -45,6 +49,14 @@
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>B131652E-260D-471F-ABF1-C4AA3C1638E7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxAudioDecoder</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>65F0E57F9FBE704C78F412BB3A758052CBC46923</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ofxAudioDecoder</string>
 		</dict>

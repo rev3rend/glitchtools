@@ -6,7 +6,7 @@
 void ofApp::setup() {
 	ofSetVerticalSync(true);
 	ofSetFrameRate(120);
-	loadFile("demo.aiff");
+	loadFile("test.aiff");
 }
 
 void ofApp::update() {
@@ -40,12 +40,16 @@ void ofApp::loadFile(string filename) {
 	const vector<float>& rawSamples = audio.getRawSamples();
 	int channels = audio.getChannels();
 	int n = rawSamples.size();
-	for(int c = 0; c < channels; c++) {
-		for(int i = c; i < n; i+= channels) {
-            cout << "sample " << i << " of channel " << c << ": " << rawSamples[i] << endl;
-			(c == 0 ? left : right).addVertex(ofVec2f(i / channels, rawSamples[i]));
-		}
+    cout << "samplecount: " << n << endl;
+    
+    // draw waveform
+    for(int i = 0; i < n; i+= channels) {
+                left.addVertex(ofVec2f(i/channels, rawSamples[i]));
+                right.addVertex(ofVec2f(i/channels, rawSamples[i+1]));
+                
 	}
+    
+    
 }
 
 
@@ -57,6 +61,61 @@ void ofApp::keyPressed(int key){
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
+    
+    if(key=='s') {
+        // draw picture
+        cout << "sound to picture... saving" << endl;
+        const vector<float>& rawSamples = audio.getRawSamples();
+        int channels = audio.getChannels();
+        int n = rawSamples.size();
+        int s = int(sqrt(n/channels));
+        cout << "img size: " << s << " by " << s << endl;
+        img.allocate(s, s, OF_IMAGE_COLOR);
+        int iptr = 0; // which audio sample are we on?
+        for(int i = 0;i<s;i++)
+        {
+            for(int j = 0;j<s;j++)
+            {
+                float r = ofMap(rawSamples[iptr], -1., 1., 0., 255.); // left side
+                float g = ofMap(rawSamples[iptr+1], -1., 1., 0., 255.); // right side
+                img.setColor(i, j, ofColor(r, g, 0));
+                
+                iptr+=channels;
+            }
+        }
+        img.reloadTexture();
+        img.saveImage("test.png");
+
+    }
+    if(key=='l') {
+        // generate sound from picture
+        cout << "picture to sound" << endl;
+        ofImage foo;
+        foo.loadImage("test.png");
+        cout << "size: " << foo.getWidth() << " by " << foo.getHeight() << endl;
+        float s = foo.getWidth();
+        float t = foo.getHeight();
+        vector<float> theSamps;
+
+        for(int i = 0;i<s;i++)
+        {
+            for(int j = 0;j<t;j++)
+            {
+                ofColor c = foo.getColor(i, j);
+                float r =ofMap(c.r, 0., 255., -1., 1.);
+                float g =ofMap(c.g, 0., 255., -1., 1.);
+                cout << "sample: " << r << " " << g << endl;
+                theSamps.push_back(r);
+                theSamps.push_back(g);
+
+            }
+        }
+        // insert file writing code to dump theSamps to disk here:
+        
+        
+
+    
+    }
 
 }
 
