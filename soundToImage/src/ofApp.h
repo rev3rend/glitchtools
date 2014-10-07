@@ -1,5 +1,8 @@
 #pragma once
 
+#define LIBAIFF_NOCOMPAT 1 // do not use LibAiff 2 API compatibility
+#include "libaiff.h"
+
 #include "ofMain.h"
 #include "ofxAudioDecoder.h"
 
@@ -15,7 +18,10 @@ class ofApp : public ofBaseApp{
 	
 	ofxAudioDecoder audio;
 	ofMesh left, right;
-    ofImage img;
+    //ofImage img;
+    ofShortImage img;
+    string themess;
+    int cuttype;
 
 		void keyPressed(int key);
 		void keyReleased(int key);

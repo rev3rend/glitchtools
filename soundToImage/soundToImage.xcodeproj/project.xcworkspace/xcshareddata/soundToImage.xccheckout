@@ -22,7 +22,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>65F0E57F9FBE704C78F412BB3A758052CBC46923</key>
-		<string>../../../../../addons/ofxAudioDecoder</string>
+		<string>../../../../addons/ofxAudioDecoder</string>
 		<key>B131652E-260D-471F-ABF1-C4AA3C1638E7</key>
 		<string>../../../../addons/ofxAudioDecoder</string>
 		<key>FB11692B37325E605D72E8DEEF15958C012D8E46</key>
@@ -48,7 +48,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B131652E-260D-471F-ABF1-C4AA3C1638E7</string>
+			<string>65F0E57F9FBE704C78F412BB3A758052CBC46923</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ofxAudioDecoder</string>
 		</dict>
@@ -56,7 +56,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>65F0E57F9FBE704C78F412BB3A758052CBC46923</string>
+			<string>B131652E-260D-471F-ABF1-C4AA3C1638E7</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ofxAudioDecoder</string>
 		</dict>
