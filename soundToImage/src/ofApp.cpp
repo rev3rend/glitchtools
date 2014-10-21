@@ -101,6 +101,7 @@ void ofApp::keyReleased(int key){
 
         else if(cuttype==1) { // not square picture
             int nrows = 64;
+            int subdivs = 4;
             int s = int((n/channels)/nrows);
             cout << "img size: " << s << " by " << nrows << endl;
             img.allocate(s, nrows, OF_IMAGE_COLOR);
@@ -111,8 +112,9 @@ void ofApp::keyReleased(int key){
                 {
                     float r = ofMap(rawSamples[iptr], -1., 1., 0., 65535.); // left side
                     float g = ofMap(rawSamples[iptr+1], -1., 1., 0., 65535.); // right side
+                    float b = (j%(s/subdivs)==0)*65535.;
                     cout << r << " " << g << endl;
-                    img.setColor(j, i, ofShortColor(r, g, 0));
+                    img.setColor(j, i, ofShortColor(r, g, b));
                     
                     iptr+=channels;
                 }
@@ -143,8 +145,8 @@ void ofApp::keyReleased(int key){
                 ofShortColor c = foo.getColor(j, i);
                 float rs = ofMap(c.r, 0., 65535., -1., 1.);
                 float gs = ofMap(c.g, 0., 65535., -1., 1.);
-                int32_t r =int(rs*500000000.);
-                int32_t g =int(gs*500000000.);
+                int32_t r =int(rs*536870912.); // 2^29 (wtf?)
+                int32_t g =int(gs*536870912.); // 2^29 (wtf?)
                 cout << "sample: " << c.r << " " << c.g << endl;
                 theSamps.push_back(r);
                 theSamps.push_back(g);
